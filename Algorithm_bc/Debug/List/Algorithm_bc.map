@@ -1,0 +1,494 @@
+###############################################################################
+#
+# IAR ELF Linker V8.30.1.114/W32 for ARM                  02/Nov/2020  10:07:10
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  
+#        D:\Documents\IAR\Algorithm_v2\Algorithm_bc\Debug\Exe\Algorithm_bc.out
+#    Map file     =  
+#        D:\Documents\IAR\Algorithm_v2\Algorithm_bc\Debug\List\Algorithm_bc.map
+#    Command line =  
+#        -f C:\Users\241-pvyu\AppData\Local\Temp\EWFE21.tmp
+#        (D:\Documents\IAR\Algorithm_v2\Algorithm_bc\Debug\Obj\AlgorithmBC.o
+#        D:\Documents\IAR\Algorithm_v2\Algorithm_bc\Debug\Obj\CommController.o
+#        D:\Documents\IAR\Algorithm_v2\Algorithm_bc\Debug\Obj\Global.o
+#        D:\Documents\IAR\Algorithm_v2\Algorithm_bc\Debug\Obj\Hardware.o
+#        D:\Documents\IAR\Algorithm_v2\Algorithm_bc\Debug\Obj\irqHandler.o
+#        D:\Documents\IAR\Algorithm_v2\Algorithm_bc\Debug\Obj\main.o
+#        D:\Documents\IAR\Algorithm_v2\Algorithm_bc\Debug\Obj\MController.o
+#        D:\Documents\IAR\Algorithm_v2\Algorithm_bc\Debug\Obj\mkpd.o
+#        D:\Documents\IAR\Algorithm_v2\Algorithm_bc\Debug\Obj\mkpd_bc.o
+#        D:\Documents\IAR\Algorithm_v2\Algorithm_bc\Debug\Obj\PackageController.o
+#        D:\Documents\IAR\Algorithm_v2\Algorithm_bc\Debug\Obj\Packages.o
+#        D:\Documents\IAR\Algorithm_v2\Algorithm_bc\Debug\Obj\startup_irq.o
+#        D:\Documents\IAR\Algorithm_v2\Algorithm_bc\Debug\Obj\system.o
+#        D:\Documents\IAR\Algorithm_v2\Algorithm_bc\Debug\Obj\timer.o
+#        D:\Documents\IAR\Algorithm_v2\Algorithm_bc\Debug\Obj\timerdrv.o
+#        D:\Documents\IAR\Algorithm_v2\Algorithm_bc\Debug\Obj\top.o
+#        D:\Documents\IAR\Algorithm_v2\Algorithm_bc\Debug\Obj\uart.o
+#        D:\Documents\IAR\Algorithm_v2\Algorithm_bc\Debug\Obj\uartdrv.o
+#        --no_out_extension -o
+#        D:\Documents\IAR\Algorithm_v2\Algorithm_bc\Debug\Exe\Algorithm_bc.out
+#        --map
+#        D:\Documents\IAR\Algorithm_v2\Algorithm_bc\Debug\List\Algorithm_bc.map
+#        --config
+#        D:\Documents\IAR\Algorithm_v2\Algorithm_bc\linker\main_ext.icf
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor                     = *
+__CPP_Exceptions              = Disabled
+__CPP_Language                = C++14
+__Heap_Handler                = Basic
+__SystemLibrary               = DLib
+__dlib_dynamic_initialization = normal
+__dlib_version                = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x0 { ro section .intvec };
+"P1":  place in [from 0x200 to 0xffff] { ro };
+define block CSTACK with size = 8K, alignment = 8 { };
+define block HEAP with size = 8K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'ffff] {
+          rw, block CSTACK, block HEAP };
+
+  Section                Kind         Address    Size  Object
+  -------                ----         -------    ----  ------
+"A0":                                            0xc0
+  .intvec                ro code          0x0    0xc0  startup_irq.o [1]
+                                       - 0xc0    0xc0
+
+"P1":                                          0x1cfc
+  .text                  ro code        0x200   0x338  system.o [1]
+  .text                  ro code        0x538   0x2cc  mkpd.o [1]
+  .text                  ro code        0x804    0xe0  I32DivModFast.o [5]
+  .text                  ro code        0x8e4     0x2  IntDivZer.o [5]
+  .rodata                const          0x8e6     0x1  unwind_debug.o [6]
+  .text                  ro code        0x8e8   0x2ba  PackageController.o [1]
+  .text                  ro code        0xba4   0x1a4  Packages.o [1]
+  .text                  ro code        0xd48   0x1b0  MController.o [1]
+  .text                  ro code        0xef8    0x18  Packages.o [1]
+  .text                  ro code        0xf10    0xb8  uartdrv.o [1]
+  .text                  ro code        0xfc8    0x1c  Packages.o [1]
+  .text                  ro code        0xfe4    0x38  Packages.o [1]
+  .text                  ro code       0x101c    0x30  Packages.o [1]
+  .text                  ro code       0x104c    0x6e  Packages.o [1]
+  .text                  ro code       0x10bc    0x30  timerdrv.o [1]
+  .text                  ro code       0x10ec    0x20  timer.o [1]
+  .text                  ro code       0x110c    0x4a  ABImemset.o [5]
+  .text                  ro code       0x1156    0x18  MController.o [1]
+  .text                  ro code       0x1170   0x19c  uart.o [1]
+  .text                  ro code       0x130c    0x20  IxxToDbl.o [4]
+  .text                  ro code       0x132c   0x184  DblMul.o [4]
+  .text                  ro code       0x14b0    0xc2  DblDiv.o [4]
+  .text                  ro code       0x1572    0x62  DblToFlt.o [4]
+  .text                  ro code       0x15d4    0x26  FltToU32.o [4]
+  .text                  ro code       0x15fc    0x20  IxxToFlt.o [4]
+  .text                  ro code       0x161c   0x120  FltAddSub.o [4]
+  .text                  ro code       0x173c    0xb0  FltMul.o [4]
+  .text                  ro code       0x17ec    0x32  FltToDbl.o [4]
+  .text                  ro code       0x181e   0x1a8  DblAddSub.o [4]
+  .text                  ro code       0x19c8    0x2e  DblToI32.o [4]
+  .text                  ro code       0x19f8   0x128  AlgorithmBC.o [1]
+  .text                  ro code       0x1b20    0x7c  Hardware.o [1]
+  .text                  ro code       0x1b9c    0x24  CommController.o [1]
+  .text                  ro code       0x1bc0    0x14  AlgorithmBC.o [1]
+  .text                  ro code       0x1bd4    0x2a  AlgorithmBC.o [1]
+  .text                  ro code       0x1bfe    0x24  AlgorithmBC.o [1]
+  .text                  ro code       0x1c22    0x18  mkpd_bc.o [1]
+  .text                  ro code       0x1c3c    0xc0  mkpd_bc.o [1]
+  .text                  ro code       0x1cfc    0x78  irqHandler.o [1]
+  .text                  ro code       0x1d74    0x3c  zero_init3.o [5]
+  .text                  ro code       0x1db0    0x28  data_init.o [5]
+  .text                  ro code       0x1dd8    0x22  main.o [1]
+  .iar.init_table        const         0x1dfc    0x14  - Linker created -
+  .text                  ro code       0x1e10    0x20  startup_irq.o [1]
+  .text                  ro code       0x1e30    0x20  cmain_call_ctors.o [5]
+  .text                  ro code       0x1e50    0x18  cppinit.o [2]
+  .text                  ro code       0x1e68    0x1e  cmain.o [5]
+  .text                  ro code       0x1e86     0x4  low_level_init.o [2]
+  .text                  ro code       0x1e8a     0x8  exit.o [2]
+  .text                  ro code       0x1e94     0xa  cexit.o [5]
+  .text                  ro code       0x1ea0    0x14  exit.o [6]
+  .text                  ro code       0x1eb4    0x18  Global.o [1]
+  .text                  ro code       0x1ecc    0x10  startup_irq.o [1]
+  .text                  ro code       0x1edc    0x10  top.o [1]
+  .text                  ro code       0x1eec     0xc  cstartup_M.o [5]
+  SHT$$PREINIT_ARRAY                   0x1ef8     0x0  <Block>
+  SHT$$INIT_ARRAY                      0x1ef8     0x4  <Block>
+    .init_array          const         0x1ef8     0x4  top.o [1]
+  __iar_tls$$INIT_ARRAY                0x1efc     0x0  <Block>
+  .rodata                const         0x1efc     0x0  zero_init3.o [5]
+                                     - 0x1efc  0x1cfc
+
+"P2", part 1 of 2:                               0x14
+  .bss                   zero     0x2000'0000    0x14  top.o [1]
+                                - 0x2000'0014    0x14
+
+"P2", part 2 of 2:                             0x2000
+  CSTACK                          0x2000'0018  0x2000  <Block>
+    CSTACK               uninit   0x2000'0018  0x2000  <Block tail>
+                                - 0x2000'2018  0x2000
+
+Unused ranges:
+
+         From           To    Size
+         ----           --    ----
+       0x1efc       0xffff  0xe104
+  0x2000'0014  0x2000'0017     0x4
+  0x2000'2018  0x2000'ffff  0xdfe8
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x14:
+          0x2000'0000  0x14
+
+Extra (__iar_cstart_call_ctors)
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module               ro code  ro data  rw data
+    ------               -------  -------  -------
+command line/config:
+    ----------------------------------------------
+    Total:
+
+D:\Documents\IAR\Algorithm_v2\Algorithm_bc\Debug\Obj: [1]
+    AlgorithmBC.o            394
+    CommController.o          36
+    Global.o                  24
+    Hardware.o               124
+    MController.o            456
+    PackageController.o      698
+    Packages.o               686
+    irqHandler.o             120
+    main.o                    34
+    mkpd.o                   716
+    mkpd_bc.o                216
+    startup_irq.o            240
+    system.o                 824
+    timer.o                   32
+    timerdrv.o                48
+    top.o                     16        4       20
+    uart.o                   412
+    uartdrv.o                184
+    ----------------------------------------------
+    Total:                 5 260        4       20
+
+dl6M_tln.a: [2]
+    cppinit.o                 24
+    exit.o                     8
+    low_level_init.o           4
+    ----------------------------------------------
+    Total:                    36
+
+dlpp6M_tl_nc.a: [3]
+    ----------------------------------------------
+    Total:
+
+m6M_tl.a: [4]
+    DblAddSub.o              424
+    DblDiv.o                 194
+    DblMul.o                 388
+    DblToFlt.o                98
+    DblToI32.o                46
+    FltAddSub.o              288
+    FltMul.o                 176
+    FltToDbl.o                50
+    FltToU32.o                38
+    IxxToDbl.o                32
+    IxxToFlt.o                32
+    ----------------------------------------------
+    Total:                 1 766
+
+rt6M_tl.a: [5]
+    ABImemset.o               74
+    I32DivModFast.o          224
+    IntDivZer.o                2
+    cexit.o                   10
+    cmain.o                   30
+    cmain_call_ctors.o        32
+    cstartup_M.o              12
+    data_init.o               40
+    zero_init3.o              60
+    ----------------------------------------------
+    Total:                   484
+
+shb_l.a: [6]
+    exit.o                    20
+    unwind_debug.o                      1
+    ----------------------------------------------
+    Total:                    20        1
+
+    Gaps                      19        2
+    Linker created                     20    8 192
+--------------------------------------------------
+    Grand Total:           7 585       27    8 212
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base        0x1dfc          --   Gb  - Linker created -
+.iar.init_table$$Limit       0x1e10          --   Gb  - Linker created -
+?main                        0x1e69         Code  Gb  cmain.o [5]
+AlgorithmBC::AlgorithmBC()
+                             0x19f9   0x8e  Code  Gb  AlgorithmBC.o [1]
+AlgorithmBC::ProcessIvents()
+                             0x1aa3   0x6e  Code  Gb  AlgorithmBC.o [1]
+AlgorithmBC::StartMovement()
+                             0x1a87   0x1c  Code  Gb  AlgorithmBC.o [1]
+CSTACK$$Base            0x2000'0018          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'2018          --   Gb  - Linker created -
+CommController::CommController(Timer *)
+                             0x1b9d    0x2  Code  Gb  CommController.o [1]
+CommController::ProcessTI()
+                             0x1ba9   0x12  Code  Gb  CommController.o [1]
+FlightDutyTask::FlightDutyTask()
+                             0x1bd5   0x2a  Code  Gb  AlgorithmBC.o [1]
+Global::Global()             0x1eb5    0x2  Code  Gb  Global.o [1]
+Hardware::Hardware()         0x1b21   0x5c  Code  Gb  Hardware.o [1]
+MKPD1_IRQ                    0x1cfd   0x2c  Code  Gb  irqHandler.o [1]
+MKPD_BC_Start_Transaction(MKPD_T *, MKPD_TX_T)
+                              0x6e5   0x1c  Code  Gb  mkpd.o [1]
+MKPD_ConfigBusController(MKPD_T *, unsigned int, unsigned int, unsigned int)
+                              0x6b3   0x22  Code  Gb  mkpd.o [1]
+MKPD_Get_Interrupt(MKPD_T *)
+                              0x641    0x4  Code  Gb  mkpd.o [1]
+MKPD_Set_BCWaitReply_Time(MKPD_T *, unsigned int)
+                              0x599    0xe  Code  Gb  mkpd.o [1]
+MKPD_Set_BC_TX_Params(MKPD_T *, MKPD_TX_T, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)
+                              0x645   0x6e  Code  Gb  mkpd.o [1]
+MKPD_Set_BC_Transaction_Format2(MKPD_T *, MKPD_TX_T, unsigned int, unsigned int)
+                              0x7bd   0x48  Code  Gb  mkpd.o [1]
+MKPD_Set_Clk_1250NS(MKPD_T *, unsigned int)
+                              0x5b5    0xe  Code  Gb  mkpd.o [1]
+MKPD_Set_Clk_1500NS(MKPD_T *, unsigned int)
+                              0x5e5   0x14  Code  Gb  mkpd.o [1]
+MKPD_Set_Clk_1750NS(MKPD_T *, unsigned int)
+                              0x5d1   0x14  Code  Gb  mkpd.o [1]
+MKPD_Set_Clk_2250NS(MKPD_T *, unsigned int)
+                              0x5c3    0xe  Code  Gb  mkpd.o [1]
+MKPD_Set_Clk_500NS(MKPD_T *, unsigned int)
+                              0x5a7    0xe  Code  Gb  mkpd.o [1]
+MKPD_Set_DecoderDisable(MKPD_T *, unsigned int)
+                              0x571   0x14  Code  Gb  mkpd.o [1]
+MKPD_Set_Edge_Time(MKPD_T *, unsigned int)
+                              0x62d   0x14  Code  Gb  mkpd.o [1]
+MKPD_Set_IncWith(MKPD_T *, unsigned int)
+                              0x55d   0x14  Code  Gb  mkpd.o [1]
+MKPD_Set_Interpacket_Time(MKPD_T *, unsigned int)
+                              0x5f9   0x1a  Code  Gb  mkpd.o [1]
+MKPD_Set_InvTX(MKPD_T *, unsigned int)
+                              0x539   0x14  Code  Gb  mkpd.o [1]
+MKPD_Set_NoActivity_Time(MKPD_T *, unsigned int)
+                              0x585   0x14  Code  Gb  mkpd.o [1]
+MKPD_Set_System_Clock(MKPD_T *, unsigned int)
+                              0x54d   0x10  Code  Gb  mkpd.o [1]
+MKPD_Set_Wait_Time(MKPD_T *, unsigned int)
+                              0x613   0x1a  Code  Gb  mkpd.o [1]
+MKPD_StartMessage(MKPD_T *, MKPD_TX_T, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)
+                              0x701   0xaa  Code  Gb  mkpd.o [1]
+MovementController::MovementController(AlgorithmBC *)
+                              0xd49    0x2  Code  Gb  MController.o [1]
+MovementController::ProcessTI()
+                              0xd73   0x66  Code  Gb  MController.o [1]
+MovementController::StartMovement()
+                              0xd5d   0x16  Code  Gb  MController.o [1]
+MovementController::updateFDT()
+                              0xdd9   0xf6  Code  Gb  MController.o [1]
+MovementParameters::MovementParameters()
+                             0x1bc1   0x14  Code  Gb  AlgorithmBC.o [1]
+NVIC_EnableIRQ                0x201  0x1d8  Code  Gb  system.o [1]
+PWR_CLK_Disable               0x3e7    0x2  Code  Gb  system.o [1]
+PWR_CLK_Enable                0x3f5    0x8  Code  Gb  system.o [1]
+PWR_RST_Disable               0x3dd    0xa  Code  Gb  system.o [1]
+PWR_RST_Enable                0x3d9    0x4  Code  Gb  system.o [1]
+PackageController::PackageController(AlgorithmBC *)
+                              0x8e9   0x48  Code  Gb  PackageController.o [1]
+PackageController::ProcessCommunication(int, TSections)
+                              0xa49   0x3a  Code  Gb  PackageController.o [1]
+PackageController::SendPackage(Subaddrs)
+                              0x931  0x118  Code  Gb  PackageController.o [1]
+PackageController::processTS0(int)
+                              0xa83   0x78  Code  Gb  PackageController.o [1]
+PackageController::processTS1_3(int, Subaddrs)
+                              0xafb   0x36  Code  Gb  PackageController.o [1]
+PackageController::processTS4_5()
+                              0xb55   0x10  Code  Gb  PackageController.o [1]
+PackageController::processTS6()
+                              0xb6f   0x22  Code  Gb  PackageController.o [1]
+PackageFDT::PackageFDT(AlgorithmBC *)
+                              0xc23   0x14  Code  Gb  Packages.o [1]
+PackageFDT::Send(Subaddrs)
+                              0xc37   0xa4  Code  Gb  Packages.o [1]
+PackageMP::PackageMP(AlgorithmBC *)
+                              0xd07    0x4  Code  Gb  Packages.o [1]
+PackageMP::Send(Subaddrs)
+                              0xd0b   0x38  Code  Gb  Packages.o [1]
+PackageNX::PackageNX(AlgorithmBC *)
+                              0xc03    0x4  Code  Gb  Packages.o [1]
+PackageNX::Send(Subaddrs, unsigned short)
+                              0xc07   0x1c  Code  Gb  Packages.o [1]
+PackageSDT::PackageSDT(AlgorithmBC *)
+                              0xcdb   0x16  Code  Gb  Packages.o [1]
+PackageSDT::Send(Subaddrs)
+                              0xcf1    0xc  Code  Gb  Packages.o [1]
+PackageSDT::fillDMA()        0x104d   0x6e  Code  Gb  Packages.o [1]
+PackageX::PackageX(AlgorithmBC *)
+                              0xbb1    0x2  Code  Gb  Packages.o [1]
+PackageX::SendDI(Subaddrs)
+                              0xbc9   0x3a  Code  Gb  Packages.o [1]
+PackageX::fillMP()            0xfe5   0x38  Code  Gb  Packages.o [1]
+PackageX::processTransaction(Subaddrs, unsigned char)
+                             0x101d   0x30  Code  Gb  Packages.o [1]
+PackageX::push(unsigned short)
+                              0xfc9   0x1c  Code  Gb  Packages.o [1]
+Region$$Table$$Base          0x1dfc          --   Gb  - Linker created -
+Region$$Table$$Limit         0x1e10          --   Gb  - Linker created -
+SHT$$INIT_ARRAY$$Base        0x1ef8          --   Gb  - Linker created -
+SHT$$INIT_ARRAY$$Limit       0x1efc          --   Gb  - Linker created -
+SHT$$PREINIT_ARRAY$$Base
+                             0x1ef8          --   Gb  - Linker created -
+SHT$$PREINIT_ARRAY$$Limit
+                             0x1ef8          --   Gb  - Linker created -
+StartDutyTask::StartDutyTask()
+                             0x1bff   0x24  Code  Gb  AlgorithmBC.o [1]
+SystemInit                    0x429   0x10  Code  Gb  system.o [1]
+TIMER_Enable(TIMER_T *)
+                             0x10ed    0xa  Code  Gb  timer.o [1]
+TIMER_IntClr(TIMER_T *)
+                             0x1107    0x6  Code  Gb  timer.o [1]
+TIMER_IntEnable(TIMER_T *)
+                             0x10f7    0xa  Code  Gb  timer.o [1]
+TIMER_SetValue(TIMER_T *, unsigned int)
+                             0x1101    0x6  Code  Gb  timer.o [1]
+Timer::Start(unsigned int)
+                             0x10c5   0x24  Code  Gb  timerdrv.o [1]
+Timer::Timer(TIMER_T *, IRQn_T, int)
+                             0x10bd    0x8  Code  Gb  timerdrv.o [1]
+Timer_1_IRQ                  0x1d29   0x18  Code  Gb  irqHandler.o [1]
+Timer_2_IRQ                  0x1d41   0x18  Code  Gb  irqHandler.o [1]
+UART_Config(UART_T *, unsigned int)
+                             0x11f9    0x4  Code  Gb  uart.o [1]
+UART_Enable(UART_T *)        0x122d    0xa  Code  Gb  uart.o [1]
+UART_GetStatus(UART_T *, UART_STATUS_T)
+                             0x11fd    0x2  Code  Gb  uart.o [1]
+UART_Init(UART_T *)          0x11af   0x3a  Code  Gb  uart.o [1]
+UART_IntEnable(UART_T *, UART_INTMASK_T)
+                             0x11f1    0x8  Code  Gb  uart.o [1]
+UART_RXEnable(UART_T *)
+                             0x1237    0xc  Code  Gb  uart.o [1]
+UART_SendByte(UART_T *, unsigned char)
+                             0x1243    0x4  Code  Gb  uart.o [1]
+UART_SetBaud(UART_T *, unsigned int, unsigned int)
+                             0x1247   0xae  Code  Gb  uart.o [1]
+UART_SetupFIFOS(UART_T *, UART_IFLS, UART_IFLS)
+                             0x11e9    0x8  Code  Gb  uart.o [1]
+UART_TXEnable(UART_T *)
+                             0x120b    0xc  Code  Gb  uart.o [1]
+[local to uart_c]::UART_GetCtrlNum(UART_T *)
+                             0x1171   0x3e  Code  Lc  uart.o [1]
+__aeabi_d2f                  0x1573         Code  Gb  DblToFlt.o [4]
+__aeabi_d2uiz                0x19c9         Code  Gb  DblToI32.o [4]
+__aeabi_dadd                 0x181f         Code  Gb  DblAddSub.o [4]
+__aeabi_ddiv                 0x14b1         Code  Gb  DblDiv.o [4]
+__aeabi_dmul                 0x132d         Code  Gb  DblMul.o [4]
+__aeabi_f2d                  0x17ed         Code  Gb  FltToDbl.o [4]
+__aeabi_f2uiz                0x15d5         Code  Gb  FltToU32.o [4]
+__aeabi_fadd                 0x161d         Code  Gb  FltAddSub.o [4]
+__aeabi_fmul                 0x173d         Code  Gb  FltMul.o [4]
+__aeabi_fsub                 0x168d         Code  Gb  FltAddSub.o [4]
+__aeabi_idiv                  0x831         Code  Gb  I32DivModFast.o [5]
+__aeabi_idiv0                 0x8e5         Code  Gb  IntDivZer.o [5]
+__aeabi_idivmod               0x831         Code  Gb  I32DivModFast.o [5]
+__aeabi_memclr               0x1121         Code  Gb  ABImemset.o [5]
+__aeabi_memclr4              0x1125         Code  Gb  ABImemset.o [5]
+__aeabi_memclr8              0x1125         Code  Gb  ABImemset.o [5]
+__aeabi_ui2d                 0x130d         Code  Gb  IxxToDbl.o [4]
+__aeabi_ui2f                 0x15fd         Code  Gb  IxxToFlt.o [4]
+__aeabi_uidiv                 0x837         Code  Gb  I32DivModFast.o [5]
+__aeabi_uidivmod              0x837         Code  Gb  I32DivModFast.o [5]
+__call_ctors                 0x1e51   0x18  Code  Gb  cppinit.o [2]
+__cmain                      0x1e69         Code  Gb  cmain.o [5]
+__exit                       0x1ea1   0x14  Code  Gb  exit.o [6]
+__iar_Memset4_word           0x1129         Code  Gb  ABImemset.o [5]
+__iar_Memset_word            0x110d         Code  Gb  ABImemset.o [5]
+__iar_cstart_call_ctors
+                             0x1e31   0x20  Code  Gb  cmain_call_ctors.o [5]
+__iar_d2uiz                  0x19cd         Code  Gb  DblToI32.o [4]
+__iar_data_init3             0x1db1   0x28  Code  Gb  data_init.o [5]
+__iar_debug_exceptions        0x8e6    0x1  Data  Gb  unwind_debug.o [6]
+__iar_program_start          0x1eed         Code  Gb  cstartup_M.o [5]
+__iar_tls$$INIT_ARRAY$$Base
+                             0x1efc          --   Gb  - Linker created -
+__iar_tls$$INIT_ARRAY$$Limit
+                             0x1efc          --   Gb  - Linker created -
+__iar_zero_init3             0x1d75   0x3c  Code  Gb  zero_init3.o [5]
+__low_level_init             0x1e87    0x4  Code  Gb  low_level_init.o [2]
+__sti__routine               0x1edd   0x10  Code  Lc  top.o [1]
+__vector_table                  0x0         Data  Gb  startup_irq.o [1]
+_call_main                   0x1e75         Code  Gb  cmain.o [5]
+_exit                        0x1e95         Code  Gb  cexit.o [5]
+_main                        0x1e83         Code  Gb  cmain.o [5]
+exit                         0x1e8b    0x8  Code  Gb  exit.o [2]
+global                  0x2000'0000   0x14  Data  Gb  top.o [1]
+main                         0x1dd9   0x22  Code  Gb  main.o [1]
+mkpd_bc::Init()              0x1c3d   0xc0  Code  Gb  mkpd_bc.o [1]
+mkpd_bc::mkpd_bc(unsigned int)
+                             0x1c23   0x18  Code  Gb  mkpd_bc.o [1]
+uart::FlushWords(unsigned char *, unsigned int)
+                              0xf89   0x40  Code  Gb  uartdrv.o [1]
+uart::SendByte(unsigned char)
+                              0xef9   0x18  Code  Gb  Packages.o [1]
+uart::uart(UART_T *, unsigned int)
+                              0xf11   0x6a  Code  Gb  uartdrv.o [1]
+void nullify<unsigned short [4], int>(unsigned short [4] &, int, int)
+                             0x1157   0x18  Code  Gb  MController.o [1]
+
+
+[1] = D:\Documents\IAR\Algorithm_v2\Algorithm_bc\Debug\Obj
+[2] = dl6M_tln.a
+[3] = dlpp6M_tl_nc.a
+[4] = m6M_tl.a
+[5] = rt6M_tl.a
+[6] = shb_l.a
+
+  7 585 bytes of readonly  code memory
+     27 bytes of readonly  data memory
+  8 212 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

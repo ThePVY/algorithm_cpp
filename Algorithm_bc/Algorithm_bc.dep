@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>772871089</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\classes\src\AlgorithmBC.cpp</file>
+            <file>$PROJ_DIR$\classes\src\CommController.cpp</file>
+            <file>$PROJ_DIR$\classes\src\Global.cpp</file>
+            <file>$PROJ_DIR$\classes\src\Hardware.cpp</file>
+            <file>$PROJ_DIR$\classes\src\MController.cpp</file>
+            <file>$PROJ_DIR$\classes\src\mkpd_bc.cpp</file>
+            <file>$PROJ_DIR$\Debug\Obj\Packages.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+            <file>$PROJ_DIR$\classes\headers\AlgorithmBC.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\Global.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\CommController.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\AlgorithmBC.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\top.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\Packages.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\Hardware.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\MController.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\Global.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\system.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\PackageController.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\irqHandler.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\timerdrv.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\AlgorithmBC.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup_irq.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\mkpd_bc.o</file>
+            <file>$PROJ_DIR$\classes\src\PackageController.cpp</file>
+            <file>$PROJ_DIR$\classes\src\Packages.cpp</file>
+            <file>$PROJ_DIR$\..\Common\src\startup_irq.s</file>
+            <file>$PROJ_DIR$\..\Common\src\timerdrv.cpp</file>
+            <file>$PROJ_DIR$\..\Common\src\uartdrv.cpp</file>
+            <file>$PROJ_DIR$\..\dsol\src\mkpd.c</file>
+            <file>$PROJ_DIR$\..\dsol\src\system.c</file>
+            <file>$PROJ_DIR$\..\dsol\src\timer.c</file>
+            <file>$PROJ_DIR$\..\dsol\src\uart.c</file>
+            <file>$PROJ_DIR$\irqHandler.cpp</file>
+            <file>$PROJ_DIR$\main.cpp</file>
+            <file>$PROJ_DIR$\top.cpp</file>
+            <file>$PROJ_DIR$\Debug\Obj\mkpd.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\timer.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\uartdrv.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\Hardware.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\CommController.pbi</file>
+            <file>$PROJ_DIR$\linker\main_ext.icf</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
+            <file>$TOOLKIT_DIR$\lib\dlpp6M_tl_nc.a</file>
+            <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
+            <file>$TOOLKIT_DIR$\lib\dl6M_tln.a</file>
+            <file>$PROJ_DIR$\Debug\List\Algorithm_bc.map</file>
+            <file>$PROJ_DIR$\Debug\Obj\top.pbi</file>
+            <file>$PROJ_DIR$\Debug\Exe\Algorithm_bc.out</file>
+            <file>$PROJ_DIR$\top.h</file>
+            <file>$PROJ_DIR$\..\dsol\headers\chip_5023BC016.h</file>
+            <file>$PROJ_DIR$\..\dsol\headers\system.h</file>
+            <file>$PROJ_DIR$\..\dsol\headers\types.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$PROJ_DIR$\..\dsol\headers\gpio.h</file>
+            <file>$PROJ_DIR$\..\dsol\headers\uart.h</file>
+            <file>$PROJ_DIR$\..\dsol\headers\ringbuffer.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$PROJ_DIR$\..\dsol\headers\mkpd.h</file>
+            <file>$PROJ_DIR$\..\dsol\headers\timer.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cassert</file>
+            <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+            <file>$PROJ_DIR$\..\Common\headers\defines.h</file>
+            <file>$PROJ_DIR$\..\Common\headers\Commands.h</file>
+            <file>$PROJ_DIR$\..\Common\headers\InnerVariables.h</file>
+            <file>$PROJ_DIR$\..\Common\headers\uartdrv.h</file>
+            <file>$PROJ_DIR$\..\Common\headers\timerdrv.h</file>
+            <file>$PROJ_DIR$\..\dsol\headers\dma.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\mkpd_bc.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\MController.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\mkpd.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\timer.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\system.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\irqHandler.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\PackageController.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\timerdrv.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\uartdrv.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\Algorithm_bc.pbd</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\classes\src\AlgorithmBC.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 11</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 23</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 76 59 55 64 57 53 71 54 61 52 70 74 56 58 63 69 73 75 77 62 60 72 65 66 67 68</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\classes\src\CommController.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 10</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 42</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 53 59 55 70 74 56 61 52 64 71 76 54 57 58 63 69 73 75 77 62 60 72 65 66 67 68</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\classes\src\Global.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 9</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 17</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 55 59 56 63 75 62 61 52 54 69 73 77 58 53 64 70 71 74 76 57 60 72 65 66 67 68</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\classes\src\Hardware.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 14</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 41</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 70 59 55 53 74 56 61 52 64 71 76 54 57 58 63 69 73 75 77 62 60 72 65 66 67 68</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\classes\src\MController.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 15</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 80</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 54 59 55 73 69 77 58 61 52 63 56 75 62 53 64 70 71 74 76 57 60 72 65 66 67 68</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\classes\src\mkpd_bc.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 25</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 79</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 53 59 55 71 54 64 76 57 61 52 70 74 56 58 63 69 73 75 77 62 60 72 65 66 67 68</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 49 51</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\classes\src\PackageController.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 19</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 86</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 73 59 55 54 69 77 58 61 52 63 56 75 62 53 64 70 71 74 76 57 60 72 65 66 67 68</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\classes\src\Packages.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 13</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 6</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 70 59 55 53 74 56 61 52 64 71 76 54 57 58 63 69 73 75 77 62 60 72 65 66 67 68</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Common\src\startup_irq.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 24</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Common\src\timerdrv.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 21</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 87</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 53 59 55 70 74 56 61 52 64 71 76 54 57 58 63 69 73 75 77 62 60 72 65 66 67 68</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Common\src\uartdrv.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 40</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 88</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 58 53 52 71 64 76 66 55 57 70 74 62 67 54 63 69 56 73 75 77 65 68 59 60 61 72</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\dsol\src\mkpd.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 38</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 81</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 53 54 55 56 57 58 59 60 61 62 69</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 57 54 69 53 56 55 62 58 59 60 61</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\dsol\src\system.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 18</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 83</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 54 53 55 56 57 58 59 60 61 62</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 60 53 62 58 55 54 56 59 61 57</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\dsol\src\timer.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 39</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 82</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 70 55 56 57 58 59 60 61 62</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 56 55 57 59 58 70 62 60 61</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\dsol\src\uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 22</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 85</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 54 53 55 56 57 58 59 60 61 62 78 64 65 66 67 68</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 58 57 53 55 62 59 61 78 64 54 56 60 65 66 67 68</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\irqHandler.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 20</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 84</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 73 59 55 54 69 77 58 61 52 63 56 75 62 53 64 70 71 74 76 57 60 72 65 66 67 68</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 16</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 7</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 55 59 56 63 75 62 61 52 54 69 73 77 58 53 64 70 71 74 76 57 60 72 65 66 67 68</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\top.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 12</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 50</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 55 59 56 63 75 62 61 52 54 69 73 77 58 53 64 70 71 74 76 57 60 72 65 66 67 68</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\Algorithm_bc.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 49</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 43 11 10 9 14 20 16 15 38 25 19 13 24 18 39 21 12 22 40 44 45 46 47 48</file>
+                </tool>
+            </inputs>
+        </file>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\classes\src\AlgorithmBC.cpp</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\classes\src\CommController.cpp</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\classes\src\Global.cpp</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\classes\src\Hardware.cpp</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\classes\src\MController.cpp</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\classes\src\mkpd_bc.cpp</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\classes\src\PackageController.cpp</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\classes\src\Packages.cpp</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\Common\src\timerdrv.cpp</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\Common\src\uartdrv.cpp</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\dsol\src\mkpd.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\dsol\src\system.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\dsol\src\timer.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\dsol\src\uart.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\irqHandler.cpp</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\main.cpp</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\top.cpp</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>
